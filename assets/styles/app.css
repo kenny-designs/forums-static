@@ -1,0 +1,212 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * Jumbotron related styles
+ */
+
+/*
+ * Pans the background-image to the left
+ */
+
+@keyframes panning {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -10000px 0;
+  }
+}
+
+.soundwave-bg {
+  background-image: url('../images/soundwave.jpg');
+  background-size: auto 225%;
+  background-repeat: repeat-x;
+  animation: panning 600s infinite linear;
+}
+
+.jumbo-container {
+  color: white;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.jumbo-container h1 {
+  text-shadow: 2px 2px 5px black;
+}
+
+#why-container {
+  text-align: center;
+}
+
+#examples-container {
+  /* Keeping evenly spaced with margin from jumbotron and the why-container */
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.example-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sheet-music {
+  background-image: url('../images/sheet-music.jpg');
+  background-position: center bottom;
+}
+
+#music-history {
+  background-image: url('../images/mozart.jpg');
+  background-position: center top;
+}
+
+#music-software {
+  background-image: url('../images/audio-software.jpg');
+  background-position: center right;
+}
+
+/*
+ * Defining the pattern all example text should follow as per DRY
+ */
+
+.example-text {
+  margin: 4rem 0;
+  padding: 1.5rem;
+}
+
+.example-text h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.example-text hr {
+  margin: 1.5rem auto;
+  width: 25%;
+}
+
+.example-text p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/*
+ * Footer Styles
+ */
+
+#site-footer {
+  background-color: #d6e6f2;
+}
+
+.footer-link-btn {
+  display: inline-block;
+  width: 100%;
+  color: inherit;
+}
+
+.footer-link-btn:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-btn {
+  background-color: transparent;
+  color: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.footer-btn:focus {
+  outline: none;
+}
+
+.footer-btn-content {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*
+ * Medium devices (tablets, 768px and up)
+ */
+@media (min-width: 768px) {
+  .footer-btn-content {
+    max-height: none !important;
+  }
+}
+
+/*
+ * Medium devices (tablets, less than 992px)
+ */
+
+@media (max-width: 991.98px) {
+  #examples-container {
+    margin-bottom: 0;
+  }
+
+  .example-image {
+    height: 75vw;
+  }
+}
+
+/*
+ * Small devices (landscape phones, less than 768px)
+ */
+
+@media (max-width: 767.98px) {
+  .footer-link-btn {
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #b9d7ea;
+  }
+
+  .footer-btn {
+    margin-top: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #b9d7ea;
+    cursor: pointer;
+  }
+
+  .footer-btn > h5::after {
+    content: '\02795';
+    color: inherit;
+    float: right;
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+  }
+
+  .active-footer-btn > h5::after {
+    content: '\2212';
+  }
+
+  .footer-btn-content {
+    max-height: 0;
+  }
+}
+
+/*
+ * Extra small devices (portrait phones, less than 576px)
+ */
+
+@media (max-width: 575.98px) {
+  /*
+   * Center navbar-brand at top when navbar collapses
+   */
+  .navbar-brand.center-brand {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 15%);
+  }
+
+  /*
+   * Small Jumbotron related styles
+   */
+  .jumbo-container h1 {
+    /* essentially display-3 class */
+    font-size: 4.5rem;
+  }
+}

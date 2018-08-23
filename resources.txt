@@ -1,0 +1,18 @@
+soundwave.jpg:
+	https://pixabay.com/en/audio-sound-waves-sound-frequency-3540254/
+	Free for commercial use
+	No attribution required
+	
+music-sheet.jpg:
+	https://www.pexels.com/search/music%20sheet/
+	Free for personal and commercial use
+	No attribution required
+	
+mozart.jpg:
+	https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart
+	Found on wikipedia which means it should be creative commons
+	
+audio-software.jpg
+	https://www.pexels.com/photo/low-angle-view-of-lighting-equipment-on-shelf-257904/
+	Free for personal and commercial use
+	No attribution required
